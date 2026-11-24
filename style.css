@@ -194,3 +194,47 @@ h2 {
     max-width: 23rem;
   }
 }
+  
+/* Het menu en de losse informatiepagina's */
+.site-menu { position: relative; z-index: 2; }
+.site-menu summary {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  min-height: 44px;
+  padding: .55rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  cursor: pointer;
+  list-style: none;
+}
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu summary:hover,
+.site-menu[open] summary { border-color: var(--accent); }
+.menu-icon {
+  width: 1.15rem;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 -.32rem currentColor, 0 .32rem currentColor;
+}
+.site-menu nav {
+  position: absolute;
+  top: calc(100% + .45rem);
+  right: 0;
+  display: grid;
+  gap: 0;
+  width: 13rem;
+  max-width: calc(100vw - 2rem);
+  padding: .4rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+.site-menu nav a { display: block; padding: .55rem .65rem; }
+.site-menu nav a:hover,
+.site-menu nav a:focus-visible,
+.site-menu nav [aria-current="page"] { background: var(--bg); color: var(--accent); }
+.info-page { max-width: 59rem; padding-block: clamp(3rem, 8vw, 6rem); }
+.info-page h1 { font-size: clamp(2.75rem, 9vw, 6rem); white-space: normal; }
+.info-page h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.info-page p { max-width: 54ch; }
+.info-section { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 2rem; }
