@@ -167,3 +167,30 @@ h2 {
     font-size: clamp(3rem, 13vw, 5.5rem);
   }
 }
+
+/* Het duo krijgt minder ruimte dan de opening. */
+.duo {
+  grid-template-columns: minmax(0, 26rem) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  padding-block: clamp(2.25rem, 4.5vw, 4rem);
+}
+
+.duo h2 {
+  font-size: clamp(2.35rem, 4.2vw, 3.65rem);
+}
+
+@media (max-width: 880px) {
+  .duo {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .duo {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .duo-portraits {
+    max-width: 23rem;
+  }
+}
