@@ -88,3 +88,82 @@ section { scroll-margin-top: 1rem; }
 
 .button:disabled { opacity: .65; cursor: default; }
 .contact { margin-top: 3rem; }
+
+/* In-Laws — kleuren en lettertypes */
+:root {
+  --bg: #191613;
+  --panel: #231e19;
+  --ink: #f3ebe0;
+  --muted: #cbbfb1;
+  --accent: #dca477;
+  --accent-hover: #efbc91;
+  --line: #4b3e34;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: clamp(3rem, 8.2vw, 7.25rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.04em;
+}
+
+.label {
+  letter-spacing: .11em;
+  font-weight: 650;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+/* Ruimte rond de foto's, tekst en muzieklinks */
+.hero {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding-block: clamp(1.75rem, 4vw, 3.5rem)
+    clamp(3rem, 7vw, 6rem);
+}
+
+.duo {
+  padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.music {
+  padding-block: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+@media (min-width: 881px) {
+  .duo-portraits figure:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+    padding-block: 1rem 2.75rem;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 13vw, 5.5rem);
+  }
+}
