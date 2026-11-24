@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="In-Laws is het akoestische duo van Kiki en Hermen. Akoestische covers voor cafés, bruiloften en kleine feesten in de regio Steenwijk.">
+<meta name="theme-color" content="#151411">
+<title>In-Laws | Akoestisch muziekduo</title>
+<link rel="icon" href="assets/foto-1.webp">
+<link rel="stylesheet" href="style.css">
+<script src="booking.js" defer></script>
+</head>
+<body>
+<header class="header wrap">
+  <a class="brand" href="#home" aria-label="In-Laws, naar boven"><img src="assets/logo.webp" width="43" height="43" alt=""><span>In-Laws</span></a>
+  <nav aria-label="Hoofdnavigatie"><a href="#duo">Het duo</a><a href="#muziek">Muziek</a><a class="nav-book" href="#boeken">Boekingen</a></nav>
+</header>
+<main id="home">
+  <section class="hero wrap" aria-labelledby="title">
+    <div class="hero-copy">
+      <p class="label"><span></span> Akoestisch muziekduo</p>
+      <h1 id="title">IN<span>‑</span>LAWS</h1>
+      <p class="intro">Bekende nummers in een akoestisch jasje, met twee gitaren en tweestemmige zang.</p>
+      <a class="button" href="#boeken">Boek het duo</a>
+    </div>
+    <figure class="hero-image"><img src="assets/in-laws-duo.webp" srcset="assets/in-laws-duo-720.webp 720w, assets/in-laws-duo.webp 1440w" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1300px) 48vw, 580px" alt="Kiki en Hermen samen met hun akoestische gitaren" fetchpriority="high"></figure>
+  </section>
+
+  <section id="duo" class="duo wrap" aria-labelledby="duo-title">
+    <div class="duo-portraits">
+      <figure><img src="assets/kiki.webp" alt="Kiki met haar gitaar" loading="lazy"><figcaption>Kiki</figcaption></figure>
+      <figure><img src="assets/hermen.webp" alt="Hermen met zijn gitaar" loading="lazy"><figcaption>Hermen</figcaption></figure>
+    </div>
+    <div class="duo-copy">
+      <p class="label"><span></span> Het duo</p>
+      <h2 id="duo-title">Twee stemmen.<br><em>Eén geluid.</em></h2>
+      <p>Wij zijn Kiki en Hermen. Kiki zet de melodie in, Hermen kleurt die in met een tweede stem. Met twee gitaren en onze stemmen geven we bekende nummers een eigen geluid.</p>
+      <p>We spelen nummers uit de pop, nederpop, rock en country, allemaal in een akoestische uitvoering.</p>
+    </div>
+  </section>
+
+  <section id="muziek" class="music wrap" aria-labelledby="music-title">
+    <div>
+      <h2 id="music-title">Hoor hoe we <em>klinken.</em></h2>
+      <p>Op Instagram en Facebook vind je korte fragmenten van In-Laws.</p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/de_inlaws/">Instagram</a>
+      <a href="https://www.facebook.com/people/De-In-Laws/61577593341470/?ref=PROFILE_EDIT_xav_ig_profile_page_web">Facebook</a>
+    </div>
+  </section>
+
+  <section id="boeken" class="booking wrap" aria-labelledby="booking-title">
+    <div>
+      <p class="label"><span></span> Boekingen</p>
+      <h2 id="booking-title">In-Laws op<br><em>jouw podium?</em></h2>
+      <p>We spelen vooral in de regio Steenwijk op bruiloften, in cafés en bij borrels, privéfeesten en andere kleine partijen.</p>
+    </div>
+    <form id="booking-form" method="post" action="https://api.web3forms.com/submit">
+      <input type="hidden" name="access_key" value="">
+      <input type="hidden" name="subject" value="Boekingsaanvraag In-Laws">
+      <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
+      <div class="fields">
+        <label>Je naam<input name="naam" autocomplete="name" required maxlength="100"></label>
+        <label>Datum <span>(optioneel)</span><input name="datum" type="date"></label>
+      </div>
+      <label>Je e-mailadres<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+      <label>Plaats of locatie<input name="locatie" required maxlength="160"></label>
+      <label>Wat organiseer je?<textarea name="bericht" rows="3" required maxlength="1500"></textarea></label>
+      <button id="send-booking" class="button" type="submit" disabled>Verstuur aanvraag</button>
+      <p class="form-status" id="form-status" role="status">Het formulier is binnenkort beschikbaar. Je kunt ons alvast <a href="#contact">mailen of een DM sturen</a>.</p>
+    </form>
+  </section>
+  <section id="contact" class="music wrap contact" aria-labelledby="contact-title">
+    <div>
+      <h2 id="contact-title">Contact</h2>
+      <p>Een vraag of liever rechtstreeks contact? Mail ons of stuur een DM.</p>
+    </div>
+    <div class="social-links">
+      <a href="mailto:De_inlaws@hotmail.com">De_inlaws@hotmail.com</a>
+      <a href="https://ig.me/m/de_inlaws">DM op Instagram</a>
+    </div>
+  </section>
+</main>
+<footer class="footer wrap">
+  <a class="brand" href="#home"><img src="assets/logo.webp" width="40" height="40" alt=""><span>In-Laws</span></a>
+  <span>Fotografie door Jeffrey Heijnen</span>
+</footer>
+</body>
+</html>
