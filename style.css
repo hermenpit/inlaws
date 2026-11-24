@@ -175,7 +175,7 @@ h2 {
   padding-block: clamp(2.25rem, 4.5vw, 4rem);
 }
 
-.duo h2 {
+.duo-page h1 {
   font-size: clamp(2.35rem, 4.2vw, 3.65rem);
 }
 
@@ -238,3 +238,13 @@ h2 {
 .info-page h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
 .info-page p { max-width: 54ch; }
 .info-section { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 2rem; }
+
+body { min-height: 100vh; display: flex; flex-direction: column; }
+body > main { flex: 1; }
+.header, .footer { flex: none; }
+.footer { border-top: 1px solid var(--line); }
+.footer-meta { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .35rem 1rem; }
+.footer-meta a:hover { color: var(--accent); }
+.duo-page .duo { border-top: 0; }
+.duo-page h1 { white-space: normal; margin: 0 0 1.3rem; }
+.duo-page h1 em { color: var(--accent); }
